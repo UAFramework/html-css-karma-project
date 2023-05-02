@@ -6,14 +6,58 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+body {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
 
+ /* header start */
+.logo {
+    width: 20px;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.about {
+    height: 700px; /* TODO: change */
+    background-image: url('../img/first-background.jpg');
+    color: white;
+}
+.about span {
+    display: block;
+}
+.about a {
+    color: white;
+    padding: 20px;
+    border-radius: 5px;;
+}
+/* header end */
 
+/* main start */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+}
+h2 {
+    grid-area: 1 / 1 / 2 / 4;
+}
+.icon1 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+.icon2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+.icon3 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+/* main end */
+
+/* footer start */
+.social a img {
+    width: 20px;
+}
+/* footer end */
