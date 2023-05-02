@@ -4,39 +4,66 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-}
-
-body {
     text-align: center;
 }
+
 a {
     text-decoration: none;
 }
 
  /* header start */
-.logo {
-    width: 20px;
-}
 nav {
     display: flex;
-    justify-content: flex-end;
+    align-items: baseline;
+}
+nav a {
+    padding: 10px;
+    color: #8b9099;
+}
+nav a:hover {
+    color: #e16940;
+
+}
+nav a:nth-child(2) {
+    margin-left: auto; /* durty align huck )) */
+}
+nav a.logo {
+    width: 20px;
 }
 .about {
-    height: 700px; /* TODO: change */
+    height: 735px;
     background-image: url('../img/first-background.jpg');
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about h1 {
+    font-size: 4.5em;
+    font-weight: 100;
+    margin: 0;
 }
 .about span {
-    display: block;
+    font-size: 2.5em;
+    font-weight: 100;
+    margin-top: 20px;
 }
 .about a {
     color: white;
     padding: 20px;
-    border-radius: 5px;;
+    border-radius: 2px;
+    background-color: #e16940;
+    padding: 10px 20px;
+    margin-top: 60px;
+    font-size: 1em;
 }
 /* header end */
 
 /* main start */
+/* grid for main start */
 main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -54,10 +81,48 @@ h2 {
 .icon3 {
     grid-area: 2 / 3 / 3 / 4;
 }
+/* grid for main end */
+main {
+    margin: 50px;
+}
+main h2 {
+    font-size: 3em;
+    font-weight: 100;
+}
+main div img {
+    width: 100px;
+}
+main div span {
+    display: block;
+    font-size: 20px;
+}
 /* main end */
 
 /* footer start */
-.social a img {
+footer {
+    border-top: 1px solid #eeeff0;
+}
+footer .join-us {
+    margin-top: 10px;
+}
+footer .social {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 10px;
+}
+footer .social a {
+    border: 1px solid #eeeff0;
+    border-radius: 50%;
+    padding: 10px 13px;
+    margin: 10px;
+}
+footer .social a img {
     width: 20px;
+}
+footer .copyright {
+    color: #b6b9bf;
+    font-size: 12px;
+    margin-top: 10px;
 }
 /* footer end */
