@@ -196,32 +196,40 @@ main {
     margin-right: auto;
     width: 576px;
     height: 100%;
-    background-color: azure;
+    background-color: white;
 }
 header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-family: 'Roboto-Light' , 'Roboto';
+    font-family: 'Roboto' , 'Roboto-Light';
+    height: 40px;
 }
 #karma {
    height: 20px;
    width: 20px;
-   margin-left: 30px;
+   margin-left: 40px;
 }
-.nav {
+header >nav {
     margin: 10px 40px;
-    font-size: 12px;
+    font-size: 10px;
     margin-left: auto;
 }
+/*
+.nav__link:visited {
+    color: black;
+}
+*/
 .nav__link {
     text-decoration: none; 
     padding: 5px;
     margin-left: auto;
-    color: grey;
+}
+.nav__link {
+  color: rgb(195, 196, 199);
 }
 .nav__link:visited {
-    color: black;
+  color: rgba(32, 31, 31, 0.847);
 }
 .nav__link:hover {
     color: darkorange;
@@ -234,7 +242,7 @@ header {
     color: aliceblue;
     text-align: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     
 }
 .content {
@@ -246,6 +254,7 @@ header {
 }
 .every {
     display: flex;
+    flex-wrap: nowrap;
     align-items: stretch;
     margin-top: 0px;
     margin-left: auto;
@@ -256,24 +265,39 @@ header {
     padding: 0px;
     font-family: 'Roboto-Regular';
 }
+.every .true {
+  padding: 20px;
+}
 .true {
-    justify-content: center;
+    justify-content: flex-end;
     padding: 20px;
     margin: 0px 30px 0px 30px;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
-.cont {
+.cont >p {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    width: auto;
+    margin-right: 0px;
+    margin-left: 30px;
+    justify-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    line-height: 40px;
     align-items: center;
-    padding: 5px;
+    padding-left: 15px;
+    padding-right: 0px;
     font-family:'Roboto', 'Roboto-Light';
+}
+.cont {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  width: 576px;
 }
 .p {
     margin: 0px;
-    padding: 0px 10px 0px 10px;
     font-family: 'Roboto', 'Roboto-Regular';
     font-size: 0.85em;
 }
@@ -301,11 +325,14 @@ button {
     display: block;
     text-align: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     border-top: 1px solid;
     border-color: rgb(208, 207, 207);
     font-family: 'Roboto-Light';
     font-size: 12px;
+    width: 500px;
 }
 img.social {
     height: 10px;
@@ -317,6 +344,10 @@ img.social {
 
 .mob {
     color:rgb(208, 207, 207);
+}
+img {
+  height: 70px;
+  width: 70px;
 }
 /**
  * Add your custom styles below
