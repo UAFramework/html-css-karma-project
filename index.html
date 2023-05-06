@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
 <body>
-    <main>
 <header>
-    <img src="C:\Users\jliah\Desktop\uaFramework\karma\html-css-karma-project\img\karma-logo.svg" width="10" height="10" alt="karma" id="karma">
+    <img src="./img/karma-logo.svg" width="10" height="10" alt="karma" id="karma">
 <nav class="nav">
    <a href="https://stackoverflow.com/questions/3014469/what-is-the-standard-way-to-add-an-icon-to-a-link-with-css" class="nav__link">Meet Karma</a>
    <a href="https://www.bing.com/ck/a?!&&p=09833d4cc901a36fJmltdHM9MTY4MzA3MjAwMCZpZ3VpZD0wZDlkM2UyZi04NjdiLTZlMTUtMTFmZi0yYzlkODc3ZTZmZjEmaW5zaWQ9NTQwNw&ptn=3&hsh=3&fclid=0d9d3e2f-867b-6e15-11ff-2c9d877e6ff1&psq=how+to+write+css+text+center&u=a1aHR0cHM6Ly93d3cudzNzY2hvb2xzLmNvbS9Dc3MvY3NzX2ljb25zLmFzcA&ntb=1" class="nav__link">How it Works</a>
@@ -23,47 +23,40 @@
    <a href="https://www.bing.com/ck/a?!&&p=0cfd9f298e0e450dJmltdHM9MTY4MzA3MjAwMCZpZ3VpZD0wZDlkM2UyZi04NjdiLTZlMTUtMTFmZi0yYzlkODc3ZTZmZjEmaW5zaWQ9NTQwNQ&ptn=3&hsh=3&fclid=0d9d3e2f-867b-6e15-11ff-2c9d877e6ff1&psq=how+to+write+css+text+center&u=a1aHR0cHM6Ly93d3cudzNzY2hvb2xzLmNvbS9Dc3MvY3NzX2JveG1vZGVsLmFzcA&ntb=1" class="nav__link">Blog</a>
    <a href="https://www.bing.com/ck/a?!&&p=5f3d2ae3c2ea568eJmltdHM9MTY4MzA3MjAwMCZpZ3VpZD0wZDlkM2UyZi04NjdiLTZlMTUtMTFmZi0yYzlkODc3ZTZmZjEmaW5zaWQ9NTM2Mw&ptn=3&hsh=3&fclid=0d9d3e2f-867b-6e15-11ff-2c9d877e6ff1&psq=linkedin&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tLw&ntb=1" class="nav__link">Help</a>
    <a href="https://www.bing.com/ck/a?!&&p=89481b62c2616558JmltdHM9MTY4MjgxMjgwMCZpZ3VpZD0wZDlkM2UyZi04NjdiLTZlMTUtMTFmZi0yYzlkODc3ZTZmZjEmaW5zaWQ9NTE1OQ&ptn=3&hsh=3&fclid=0d9d3e2f-867b-6e15-11ff-2c9d877e6ff1&psq=%d1%8f%d0%ba+%d0%b7%d0%bd%d1%8f%d1%82%d0%b8+%d0%bf%d1%96%d0%b4%d0%ba%d1%80%d0%b5%d1%81%d0%bb%d0%b5%d0%bd%d0%bd%d1%8f+%d1%82%d0%b5%d0%ba%d1%81%d1%82%d1%83+%d1%81%d1%81%d1%81&u=a1aHR0cHM6Ly93M3NjaG9vbHN1YS5naXRodWIuaW8vY3NzL2Nzc190ZXh0Lmh0bWw&ntb=1" class="nav__link">Login</a>
-   
 </nav>
 </header>
-
+<main>
 <section class="intro">
-    <article class="content">
     <h1>Introducing Karma</h1>
     <p>Bring WiFi with you, everywhere you go</p>
     <button>Learn More</button>
-    </article>
 </section>
     <h2>Everyone needs a little Karma.</h2>
-    <section class="every">
-        <section class="true">
-        <img src="C:\Users\jliah\Desktop\uaFramework\karma\html-css-karma-project\img\icon-devices.svg" alt="device">
-        </section>
-    <section class="true">
-        <img src="C:\Users\jliah\Desktop\uaFramework\karma\html-css-karma-project\img\icon-coffee.svg" alt="coffe">
-    
-    </section>
-    <section class="true">
-    <img src="C:\Users\jliah\Desktop\uaFramework\karma\html-css-karma-project\img\icon-refill.svg" alt="gas">
-    </section>
-    </section>
-    <section class="cont">
-    <p class="p">Internet for all devices</p>
-    <p class="p">Boost your productivity</p>
-    <p class="p">Pay as You Go</p>
+    <section class="karma-konteiner">
+        <div class="karma-item">
+        <img src="./img/icon-devices.svg" alt="device">
+        <p class="p">Internet for all devices</p>
+        </div>
+        <div class="karma-item">
+        <img src="./img/icon-coffee.svg" alt="coffe">
+        <p class="p">Boost your productivity</p>
+        </div>
+        <div class="karma-item">
+        <img src="./img/icon-refill.svg" alt="gas">
+        <p class="p">Pay as You Go</p>
+        </div>
 </section>
-
+    </main>
 <footer class="footer">
-    <p>Join us on</p>
-    <a class="external" href="" link="twiter"><img src="C:\Users\jliah\Desktop\uaFramework\karma\html-css-karma-project\img\twitter-icon.svg" class="social"></a>
-    <a class="external" href="" link="fa"><img src="C:\Users\jliah\Desktop\uaFramework\karma\html-css-karma-project\img\facebook-icon.svg" class="social"></a>
-    <a class="external" href="" link="insta"><img src="C:\Users\jliah\Desktop\uaFramework\karma\html-css-karma-project\img\instagram-icon.svg" class="social"></a>
+    <p class="footer paragraf">Join us on</p>
+    <a class="external" href="" link="twiter"><img src="./img/twitter-icon.svg" class="social"></a>
+    <a class="external" href="" link="fa"><img src="./img/facebook-icon.svg" class="social"></a>
+    <a class="external" href="" link="insta"><img src="./img/instagram-icon.svg" class="social"></a>
     <p class="mob">&#169Karma Mobility.Inc</p>
 </footer>
-</main>
+
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-
 </body>
 </html>
