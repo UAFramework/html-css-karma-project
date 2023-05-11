@@ -1,19 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div id="root">
+      <!--Navigation section-->
+      <header>
+        <section id="header-container">
+          <img id="logo" src="./img/karma-logo.svg" />
+          <nav>
+            <a href="#"><span style="font-weight: bold">Meet Karma</span></a>
+            <a href="#">How it Works</a>
+            <a href="#">Store</a>
+            <a href="#">Blog</a>
+            <a href="#">Help</a>
+            <a href="#">Login</a>
+          </nav>
+        </section>
+      </header>
+
+      <!--Main content-->
+      <main>
+        <section id="hero-container">
+          <h1>Introducing Karma</h1>
+          <div>Bring WiFi with you, everywhere you go.</div>
+          <a href="#">Learn More</a>
+        </section>
+
+        <section id="karma-container">
+          <h2>Everyone needs a little Karma.</h2>
+          <div>
+            <article class="karma-tile">
+              <a href="#"
+                ><img src="./img/icon-devices.svg" />
+                <div>Internet for all devices</div></a
+              >
+            </article>
+            <article class="karma-tile">
+              <a href="#"
+                ><img src="./img/icon-coffee.svg" />
+                <div>Boost your productivity</div></a
+              >
+            </article>
+            <article class="karma-tile">
+              <a href="#"
+                ><img src="./img/icon-devices.svg" />
+                <div>Pay as you go</div></a
+              >
+            </article>
+          </div>
+        </section>
+
+        <hr />
+      </main>
+
+      <!--Footer section-->
+      <footer id="footer-container">
+        <div>Join us on</div>
+        <div id="social-media-link">
+          <a href=""
+            ><div><img src="./img/twitter-icon.svg" /></div
+          ></a>
+          <a href=""
+            ><div><img src="./img/facebook-icon.svg" /></div
+          ></a>
+          <a href=""
+            ><div><img src="./img/instagram-icon.svg" /></div
+          ></a>
+        </div>
+        <div>Mobility, Inc. &copy;</div>
+      </footer>
+    </div>
 
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-
-</body>
+  </body>
 </html>
