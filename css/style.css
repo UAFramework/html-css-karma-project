@@ -1,19 +1,131 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+#root > * {
+    width: 60%;
+}
 
 
+.body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    justify-content: right;
+
+}
+
+
+header {
+    
+    display: flex;
+    align-items: center;
+}
+
+header #logo {
+    max-height: 3em; 
+    }
+
+    .nav {
+
+justify-content: right;
+    }
+    
+    h1 {
+        font-size: 3em;
+        font-weight: 100%;
+        grid-area: 1 / 1 / 2 / 4;
+        margin: 0;
+        place-self: center;
+    }
+
+
+button {
+    border: none;
+    background: rgb(224, 105, 31);
+    background: #ff6915;
+    color: #f2f2f2;
+    padding: 18px;
+    margin-top: 2em;
+    font-size: 18px;
+    margin-top: 1em;
+    font-size: 24px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box; /* передивися!!! */
+    transition: all 500ms ease;
+  }
+
+#hero {
+    height: 565px;
+    background-image: url('../img/first-background.jpg');
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+h2 {
+    font-size: 2em;
+    place-self: center;
+}
+
+.karma-icon {
+    max-height: 7em;
+}
+
+
+
+#karma-container div {
+    min-height: 30hv;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    column-gap: 15px;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+
+#social-media-links {
+    display: flex;
+}
+
+#social-media-links img {
+    max-width: 1em;
+    display: flex;
+}
+
+
+
+
+#footer-container {
+    min-height: 10vh;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+
+}
+
+#footer-container img {
+    width: 32px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin: 0 8px;
+}
