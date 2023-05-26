@@ -1,7 +1,7 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 * {
-    margin: 0%;
+    margin: 0;
     padding: 0;
 }
 html {
@@ -13,6 +13,7 @@ body {
     background-color: black;
     margin: 0px;
     padding: 0px;
+    position: relative;
 }
 
 main {
@@ -23,6 +24,8 @@ main {
     margin-top: 0;
 }
 header {
+    display: flex;
+    flex: wrap;
     font-family: 'Roboto' , 'Roboto-Light';
     margin-right: auto;
     margin-left: auto;
@@ -30,41 +33,46 @@ header {
     width: 576px;
     background-color: white;
     margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    padding-top: 20px;
 }
-#karma {
-   width: 20px;
-   height: 20px;
+#logo {
+   width: 1em;
+   height: 1em;
    margin-left: 40px;
    margin-bottom: 0;
+
 }
 
 header >nav {
     font-size: 10px;
     margin-left: auto;
+    margin-right: 20px;
 }
 
-.nav__link {
+nav a{
     text-decoration: none; 
     padding: 5px 5px 0 5px;
     margin-left: auto;
+   color: rgb(195, 196, 199);
 }
-.nav__link {
-  color: rgb(195, 196, 199);
-}
-.nav__link:visited {
+nav a:visited {
   color: rgba(32, 31, 31, 0.847);
 }
-.nav__link:hover {
+nav a:hover {
     color: darkorange;
 }
 
 .intro {
-    background-image: url(https://lh3.googleusercontent.com/OOZFAZ_fVaS9CEBFKPzd_NeakVNgMBpqxZ0uj4si5Qy9DXW_A2rkrVa3_czhKqnXP4lpLq3E1FWURDI9mWJrc9E6dFcnRZ4CPcMWd1JGU_W2bwFvJiT99dbftnsUJrek4bg0YtE860KwoZixOFxfBxxLGnlRatVhsn2FXv2E0i5z7cEtkVFJufV_ayshydmrU_nZxAm7s6dz_QMY4pAF6ixCWXTxNx_OuIsobFexwoOdLOwDlBqf10w2QBgYpAHPMrhKi5qbjEochsvv0DMPkaGfYmnsvwaIuTn9_Ik26lguGNlcfgMhpRTcZPGpzxU08IP9UBUP-XQDmjVp6S2GVZub90z9RKxTcUtcopNOETKdxUoiK3rctv4WkwFexYMWJ3MbER6ZZ9Tqhr--NVJk-nUdnS6eXejqXf10CRnn_KENEqOwJo-5nWQiPGbp-dlcv3E0u-eEL3RxC88X05-ezaU6r8fWwvO26jv8_4kFGtI3Uol-EkYTrQXjnljm726xDTZkao-5V42Z2psN_wY5N2-mdVrintVZJYQfzS2O66QvECSU8fMK2-9RQBB_w7XAOia0eaTBA1qw1lVrbteU7zHSSkYatoWlLoe1xrXz6oDJ6BfD6f5e87saanZbqh67jg_D3AEsXGcSZz2i_CF7iQf57Qp8d4IwM1L09hEyOg2pLBRs7QhH2OQlIxIXTYZSuqJFxP3BVbuU7B_uHEIFKlDA9Xm2HOsvAmVLaX4etxtPr04gQp1hZxECqjzQYlm0X6qed_xkAznpxHdN3Z5FzOH3-C5YeX2UnWT-Zlm9oUs6bEH8AlU_8pWdkPmwpPBDZJeiUnWjMTsGg7UWr3VclREcmqo3Vl0lr_-04mWhXaWAaUsXRQtOwfszL46q5qQHYGNyHZJg7U9fjRfJlKdzXJg4tWhXr6FLMHZvCNepHcUxfyHvAH8viBOKr_nZTRmEFTEKuYMJaTV8bqJwVPNbEA=w1600-h735-s-no?authuser=0);
+    background-image: url(../img/first-background.jpg);
     height: 300px;
     color: aliceblue;
     text-align: center;
+    background-position: 70%;
+    background-size: 576px;
+    position: relative;
     background-repeat: no-repeat;
-    background-size: 576px 300px;
     width: 576px;
     margin-left: auto;
     margin-right: auto;
@@ -73,7 +81,14 @@ header >nav {
     font-weight: lighter;
     margin-top: 0;
 }
-.karma-konteiner {
+.hero {
+    display: block;
+    padding: 10px;
+}
+p {
+    padding-bottom: 30px;
+}
+.karma-conteiner {
     display: flex;
     flex-wrap: nowrap;
     align-items: stretch;
@@ -85,6 +100,13 @@ header >nav {
     justify-content: center;
     padding: 0px;
     font-family: 'Roboto-Regular';
+}
+ h2 {
+    text-align: center;
+    font-style: normal;
+    font-family: 'Roboto', 'Roboto-Light';
+    font-weight: lighter;
+    margin-top: 30px;
 }
 
 .karma-item {
@@ -100,20 +122,18 @@ header >nav {
 }
 h1 {
     font-weight: lighter;
-    padding: 10px;
-}
-h2 {
-    text-align: center;
-    font-style: normal;
-    font-family: 'Roboto', 'Roboto-Light';
-    font-weight: lighter;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
-button {
+.learn {
+    text-align: center;
+    text-decoration: none;
     color:beige;
     background-color: rgb(255, 115, 0);
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
+    border:rgb(255, 115, 0) solid 1px;
     border-radius: 4px;
 }
 
