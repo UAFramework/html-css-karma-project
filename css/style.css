@@ -1,11 +1,175 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    font-family: 'Roboto', 'Roboto-Light', 'Roboto-Regular', 'Roboto-Medium' sans-serif;
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
 }
 
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 576px;
+    background-color: white;
+    margin-top: 0;
+}
+header {
+    display: flex;
+    flex: wrap;
+    font-family: 'Roboto' , 'Roboto-Light';
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    width: 576px;
+    background-color: white;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    padding-top: 20px;
+}
+#logo {
+   width: 1em;
+   height: 1em;
+   margin-left: 40px;
+   margin-bottom: 0;
+
+}
+
+header >nav {
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+nav a{
+    text-decoration: none; 
+    padding: 5px 5px 0 5px;
+    margin-left: auto;
+   color: rgb(195, 196, 199);
+}
+nav a:visited {
+  color: rgba(32, 31, 31, 0.847);
+}
+nav a:hover {
+    color: darkorange;
+}
+
+.intro {
+    background-image: url(../img/first-background.jpg);
+    height: 300px;
+    color: aliceblue;
+    text-align: center;
+    background-position: 70%;
+    background-size: 576px;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 576px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', 'Roboto-Regular';
+    font-style: normal;
+    font-weight: lighter;
+    margin-top: 0;
+}
+.hero {
+    display: block;
+    padding: 10px;
+}
+p {
+    padding-bottom: 30px;
+}
+.karma-conteiner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 576px;
+    text-align: center;
+    justify-content: center;
+    padding: 0px;
+    font-family: 'Roboto-Regular';
+}
+ h2 {
+    text-align: center;
+    font-style: normal;
+    font-family: 'Roboto', 'Roboto-Light';
+    font-weight: lighter;
+    margin-top: 30px;
+}
+
+.karma-item {
+    justify-content: flex-end;
+    padding: 20px;
+    margin: 0;
+}
+
+.p {
+    margin: 0px;
+    font-family: 'Roboto', 'Roboto-Regular';
+    font-size: 0.85em;
+}
+h1 {
+    font-weight: lighter;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.learn {
+    text-align: center;
+    text-decoration: none;
+    color:beige;
+    background-color: rgb(255, 115, 0);
+    padding: 10px;
+    margin-top: 30px;
+    border:rgb(255, 115, 0) solid 1px;
+    border-radius: 4px;
+}
+
+.footer {
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto';
+    font-size: 12px;
+    width: 576px;
+    background-color:white;
+}
+.paragraf {
+    border-top: 1px solid;
+    border-color: rgb(208, 207, 207);
+    width: 500px; 
+    padding-top: 20px;
+}
+img.social {
+    height: 10px;
+    width: 10px;
+    border: 1px rgb(208, 207, 207) solid;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.mob {
+    color:rgb(208, 207, 207);
+    padding-top: 10px;
+}
+img {
+  height: 70px;
+  width: 70px;
+}
 /**
  * Add your custom styles below
  * 
